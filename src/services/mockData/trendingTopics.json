@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "keyword": "AI Content Creation",
+    "volume": 125000,
+    "growth": 45,
+    "category": "technology",
+    "relatedTerms": ["ChatGPT", "AI writing", "content automation", "machine learning"]
+  },
+  {
+    "Id": 2,
+    "keyword": "Remote Work Productivity",
+    "volume": 89000,
+    "growth": 23,
+    "category": "business",
+    "relatedTerms": ["work from home", "productivity tools", "team collaboration", "digital nomad"]
+  },
+  {
+    "Id": 3,
+    "keyword": "Sustainable Living",
+    "volume": 156000,
+    "growth": 67,
+    "category": "lifestyle",
+    "relatedTerms": ["eco-friendly", "zero waste", "green lifestyle", "sustainability"]
+  },
+  {
+    "Id": 4,
+    "keyword": "Crypto Trading Strategies",
+    "volume": 234000,
+    "growth": -12,
+    "category": "business",
+    "relatedTerms": ["Bitcoin", "DeFi", "trading tips", "cryptocurrency"]
+  },
+  {
+    "Id": 5,
+    "keyword": "Online Learning Platforms",
+    "volume": 198000,
+    "growth": 34,
+    "category": "education",
+    "relatedTerms": ["e-learning", "online courses", "skill development", "MOOCs"]
+  },
+  {
+    "Id": 6,
+    "keyword": "Mental Health Apps",
+    "volume": 167000,
+    "growth": 78,
+    "category": "lifestyle",
+    "relatedTerms": ["meditation apps", "therapy", "wellness", "mindfulness"]
+  },
+  {
+    "Id": 7,
+    "keyword": "TikTok Marketing",
+    "volume": 145000,
+    "growth": 89,
+    "category": "business",
+    "relatedTerms": ["social media marketing", "viral content", "influencer marketing", "short videos"]
+  },
+  {
+    "Id": 8,
+    "keyword": "React.js Tutorial",
+    "volume": 112000,
+    "growth": 56,
+    "category": "technology",
+    "relatedTerms": ["web development", "JavaScript", "frontend", "React hooks"]
+  },
+  {
+    "Id": 9,
+    "keyword": "Plant-Based Recipes",
+    "volume": 189000,
+    "growth": 43,
+    "category": "lifestyle",
+    "relatedTerms": ["vegan recipes", "healthy eating", "plant protein", "meal prep"]
+  },
+  {
+    "Id": 10,
+    "keyword": "Gaming Setup 2024",
+    "volume": 234000,
+    "growth": 29,
+    "category": "entertainment",
+    "relatedTerms": ["gaming chair", "RGB lighting", "streaming setup", "PC build"]
+  },
+  {
+    "Id": 11,
+    "keyword": "No-Code Development",
+    "volume": 98000,
+    "growth": 92,
+    "category": "technology",
+    "relatedTerms": ["Webflow", "bubble", "app building", "citizen developer"]
+  },
+  {
+    "Id": 12,
+    "keyword": "Personal Finance Tips",
+    "volume": 267000,
+    "growth": 31,
+    "category": "business",
+    "relatedTerms": ["budgeting", "investing", "savings", "financial planning"]
+  }
+]

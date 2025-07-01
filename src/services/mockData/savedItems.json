@@ -1,0 +1,59 @@
+[
+  {
+    "Id": 1,
+    "type": "content",
+    "title": "10 AI Tools That Will Transform Your Content Creation Process",
+    "description": "Comprehensive review of AI content creation tools",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example1",
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop",
+    "views": 125000,
+    "engagement": 8500,
+    "publishedDate": "2024-01-15T10:30:00Z",
+    "author": "TechCreator Pro",
+    "createdAt": "2024-01-16T09:15:00Z"
+  },
+  {
+    "Id": 2,
+    "type": "ideas",
+    "title": "I Let AI Write My Content for 30 Days - Here's What Happened",
+    "topic": "AI Content Creation",
+    "type": "video",
+    "score": 95,
+    "reasoning": "Personal experiments and challenge videos get high engagement, especially with controversial topics like AI replacing humans.",
+    "createdAt": "2024-01-14T14:22:00Z"
+  },
+  {
+    "Id": 3,
+    "type": "searches",
+    "title": "AI Content Creation Tools",
+    "description": "Search for trending AI writing and content creation tools",
+    "query": "AI content creation tools 2024",
+    "results": 127,
+    "createdAt": "2024-01-13T11:30:00Z"
+  },
+  {
+    "Id": 4,
+    "type": "content",
+    "title": "Zero Waste Living: My 30-Day Challenge Results",
+    "description": "Personal journey into sustainable living practices",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example3",
+    "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop",
+    "views": 89000,
+    "engagement": 6700,
+    "publishedDate": "2024-01-12T09:15:00Z",
+    "author": "EcoLifestyle",
+    "createdAt": "2024-01-12T16:45:00Z"
+  },
+  {
+    "Id": 5,
+    "type": "ideas",
+    "title": "Home Office Setup for Maximum Productivity (Under $500)",
+    "topic": "Remote Work Productivity",
+    "type": "video",
+    "score": 85,
+    "reasoning": "Budget-friendly home office content appeals to remote workers looking for affordable solutions.",
+    "createdAt": "2024-01-11T10:20:00Z"
+  }
+]

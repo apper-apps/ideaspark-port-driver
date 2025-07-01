@@ -1,0 +1,112 @@
+[
+  {
+    "Id": 1,
+    "title": "10 AI Tools That Will Transform Your Content Creation Process",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example1",
+    "thumbnail": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=200&fit=crop",
+    "views": 125000,
+    "engagement": 8500,
+    "publishedDate": "2024-01-15T10:30:00Z",
+    "author": "TechCreator Pro"
+  },
+  {
+    "Id": 2,
+    "title": "The Complete Guide to Remote Work Productivity in 2024",
+    "platform": "Blog",
+    "url": "https://example.com/remote-work-guide",
+    "thumbnail": "https://images.unsplash.com/photo-1664475041704-0b39e3b46de4?w=400&h=200&fit=crop",
+    "views": 45000,
+    "engagement": 1200,
+    "publishedDate": "2024-01-10T14:22:00Z",
+    "author": "ProductivityHub"
+  },
+  {
+    "Id": 3,
+    "title": "Zero Waste Living: My 30-Day Challenge Results",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example3",
+    "thumbnail": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=200&fit=crop",
+    "views": 89000,
+    "engagement": 6700,
+    "publishedDate": "2024-01-12T09:15:00Z",
+    "author": "EcoLifestyle"
+  },
+  {
+    "Id": 4,
+    "title": "Crypto is crashing again - what should retail investors do?",
+    "platform": "Reddit",
+    "url": "https://reddit.com/r/cryptocurrency/example4",
+    "thumbnail": null,
+    "views": 234000,
+    "engagement": 15600,
+    "publishedDate": "2024-01-08T16:45:00Z",
+    "author": "CryptoAnalyst99"
+  },
+  {
+    "Id": 5,
+    "title": "Best Online Learning Platforms Compared: Coursera vs Udemy vs EdX",
+    "platform": "Blog",
+    "url": "https://example.com/learning-platforms-comparison",
+    "thumbnail": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=200&fit=crop",
+    "views": 67000,
+    "engagement": 3400,
+    "publishedDate": "2024-01-14T11:30:00Z",
+    "author": "EdTech Reviews"
+  },
+  {
+    "Id": 6,
+    "title": "I Tried 15 Mental Health Apps - Here Are the Best Ones",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example6",
+    "thumbnail": "https://images.unsplash.com/photo-1607196636130-3cb4eeb65c91?w=400&h=200&fit=crop",
+    "views": 156000,
+    "engagement": 12800,
+    "publishedDate": "2024-01-11T13:20:00Z",
+    "author": "WellnessJourney"
+  },
+  {
+    "Id": 7,
+    "title": "How I Got 1M Views on TikTok in 30 Days (Complete Strategy)",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example7",
+    "thumbnail": "https://images.unsplash.com/photo-1611605698335-8b1569810432?w=400&h=200&fit=crop",
+    "views": 345000,
+    "engagement": 28900,
+    "publishedDate": "2024-01-09T15:10:00Z",
+    "author": "SocialMediaMaster"
+  },
+  {
+    "Id": 8,
+    "title": "React.js in 2024: Complete Beginner's Guide with Hooks",
+    "platform": "Blog",
+    "url": "https://example.com/react-guide-2024",
+    "thumbnail": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400&h=200&fit=crop",
+    "views": 98000,
+    "engagement": 5600,
+    "publishedDate": "2024-01-13T10:45:00Z",
+    "author": "CodeMentor"
+  },
+  {
+    "Id": 9,
+    "title": "30 Plant-Based Recipes That Don't Suck",
+    "platform": "Blog",
+    "url": "https://example.com/plant-based-recipes",
+    "thumbnail": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&h=200&fit=crop",
+    "views": 189000,
+    "engagement": 8900,
+    "publishedDate": "2024-01-07T12:00:00Z",
+    "author": "PlantPowered"
+  },
+  {
+    "Id": 10,
+    "title": "My $5000 Gaming Setup Tour (2024 Edition)",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=example10",
+    "thumbnail": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=400&h=200&fit=crop",
+    "views": 456000,
+    "engagement": 34500,
+    "publishedDate": "2024-01-05T18:30:00Z",
+    "author": "GamingSetupGuru"
+  }
+]

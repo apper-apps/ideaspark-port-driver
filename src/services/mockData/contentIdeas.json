@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "title": "5 AI Writing Tools That Actually Save Time (Not Clickbait)",
+    "topic": "AI Content Creation",
+    "type": "video",
+    "score": 87,
+    "reasoning": "High search volume for AI tools combined with skepticism about clickbait content creates opportunity for authentic reviews."
+  },
+  {
+    "Id": 2,
+    "title": "Building Your First AI-Powered Blog: Step-by-Step Tutorial",
+    "topic": "AI Content Creation",
+    "type": "blog",
+    "score": 92,
+    "reasoning": "Tutorial content performs well, and AI blog creation is trending with beginners looking for practical guides."
+  },
+  {
+    "Id": 3,
+    "title": "I Let AI Write My Content for 30 Days - Here's What Happened",
+    "topic": "AI Content Creation",
+    "type": "video",
+    "score": 95,
+    "reasoning": "Personal experiments and challenge videos get high engagement, especially with controversial topics like AI replacing humans."
+  },
+  {
+    "Id": 4,
+    "title": "ChatGPT vs Copy.ai vs Jasper: Which AI Writer Wins?",
+    "topic": "AI Content Creation",
+    "type": "blog",
+    "score": 89,
+    "reasoning": "Comparison content helps users make decisions and ranks well for commercial keywords."
+  },
+  {
+    "Id": 5,
+    "title": "How to Fact-Check AI-Generated Content (Essential Guide)",
+    "topic": "AI Content Creation",
+    "type": "infographic",
+    "score": 78,
+    "reasoning": "Growing concern about AI accuracy creates demand for verification guides. Infographics are highly shareable."
+  },
+  {
+    "Id": 6,
+    "title": "Home Office Setup for Maximum Productivity (Under $500)",
+    "topic": "Remote Work Productivity",
+    "type": "video",
+    "score": 85,
+    "reasoning": "Budget-friendly home office content appeals to remote workers looking for affordable solutions."
+  },
+  {
+    "Id": 7,
+    "title": "The Psychology Behind Productive Remote Work Habits",
+    "topic": "Remote Work Productivity",
+    "type": "blog",
+    "score": 82,
+    "reasoning": "Psychology-based content performs well and helps remote workers understand the 'why' behind productivity tips."
+  },
+  {
+    "Id": 8,
+    "title": "Remote Work Red Flags: 10 Signs Your WFH Setup Is Failing",
+    "topic": "Remote Work Productivity",
+    "type": "social",
+    "score": 79,
+    "reasoning": "List-based content with warning signs creates engagement and helps people identify problems."
+  }
+]
