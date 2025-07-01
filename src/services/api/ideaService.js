@@ -15,51 +15,67 @@ export const generateIdeas = async (topic, parameters = {}) => {
     idea.title.toLowerCase().includes(topic.toLowerCase())
   )
   
-  // If no specific matches, generate some generic ideas
+// If no specific matches, generate educational content ideas
   if (ideas.length === 0) {
-    const genericIdeas = [
+    const educationalIdeas = [
       {
         Id: Date.now() + 1,
-        title: `Ultimate Guide to ${topic}: Everything You Need to Know`,
+        title: `Mastering ${topic}: Complete Course Curriculum Design`,
         topic: topic,
-        type: parameters.type === 'all' ? 'blog' : parameters.type,
-        score: Math.floor(Math.random() * 30) + 70,
-        reasoning: `Comprehensive guides on ${topic} perform well and establish authority in the niche.`
+        type: parameters.type === 'all' ? 'course' : parameters.type,
+        score: Math.floor(Math.random() * 20) + 80,
+        reasoning: `Comprehensive course design on ${topic} addresses educator needs for structured learning paths and systematic skill development.`
       },
       {
         Id: Date.now() + 2,
-        title: `${topic} Mistakes That Are Costing You (And How to Fix Them)`,
+        title: `${topic} Workshop: Interactive Learning Activities That Work`,
         topic: topic,
-        type: parameters.type === 'all' ? 'video' : parameters.type,
+        type: parameters.type === 'all' ? 'workshop' : parameters.type,
         score: Math.floor(Math.random() * 25) + 75,
-        reasoning: `Problem-solving content around ${topic} attracts engaged audiences looking for solutions.`
+        reasoning: `Interactive workshops on ${topic} engage learners through hands-on practice and collaborative problem-solving.`
       },
       {
         Id: Date.now() + 3,
-        title: `I Tried ${topic} for 30 Days - Here's What Happened`,
+        title: `Case Study: How ${topic} Transformed My Students' Results`,
         topic: topic,
-        type: parameters.type === 'all' ? 'video' : parameters.type,
-        score: Math.floor(Math.random() * 20) + 80,
-        reasoning: `Personal experiment content creates authentic connection and drives high engagement.`
+        type: parameters.type === 'all' ? 'blog' : parameters.type,
+        score: Math.floor(Math.random() * 20) + 85,
+        reasoning: `Real transformation stories around ${topic} build credibility and inspire both educators and learners.`
       },
       {
         Id: Date.now() + 4,
-        title: `${topic} for Beginners: Simple Steps to Get Started`,
+        title: `${topic} Assessment Strategies: Measuring Real Learning`,
         topic: topic,
-        type: parameters.type === 'all' ? 'blog' : parameters.type,
-        score: Math.floor(Math.random() * 25) + 65,
-        reasoning: `Beginner-friendly content has consistent search demand and helps build audience.`
+        type: parameters.type === 'all' ? 'course' : parameters.type,
+        score: Math.floor(Math.random() * 25) + 70,
+        reasoning: `Assessment-focused content helps educators validate learning outcomes and improve their ${topic} teaching methods.`
       },
       {
         Id: Date.now() + 5,
-        title: `The Science Behind ${topic}: What Research Shows`,
+        title: `Coaching Framework: ${topic} Breakthrough Techniques`,
         topic: topic,
-        type: parameters.type === 'all' ? 'infographic' : parameters.type,
-        score: Math.floor(Math.random() * 30) + 70,
-        reasoning: `Research-backed content builds credibility and gets shared by authoritative sources.`
+        type: parameters.type === 'all' ? 'coaching' : parameters.type,
+        score: Math.floor(Math.random() * 30) + 75,
+        reasoning: `Structured coaching approaches for ${topic} appeal to consultants seeking proven methodologies and client transformation tools.`
+      },
+      {
+        Id: Date.now() + 6,
+        title: `${topic} Book Outline: Chapter-by-Chapter Authority Building`,
+        topic: topic,
+        type: parameters.type === 'all' ? 'book' : parameters.type,
+        score: Math.floor(Math.random() * 25) + 78,
+        reasoning: `Book planning content helps experts structure their ${topic} knowledge into publishable, marketable educational resources.`
+      },
+      {
+        Id: Date.now() + 7,
+        title: `${topic} Learning Path: From Novice to Expert in 90 Days`,
+        topic: topic,
+        type: parameters.type === 'all' ? 'webinar' : parameters.type,
+        score: Math.floor(Math.random() * 20) + 82,
+        reasoning: `Structured learning progressions for ${topic} provide clear value propositions and attract serious learners seeking systematic growth.`
       }
     ]
-    ideas = genericIdeas
+    ideas = educationalIdeas
   }
   
   // Filter by content type if specified
@@ -67,17 +83,37 @@ export const generateIdeas = async (topic, parameters = {}) => {
     ideas = ideas.filter(idea => idea.type === parameters.type)
   }
   
-  // Adjust scores based on difficulty and audience
-  ideas = ideas.map(idea => ({
-    ...idea,
-    score: Math.min(100, idea.score + (parameters.difficulty === 'advanced' ? 5 : 0))
-  }))
+// Adjust scores based on educational parameters
+  ideas = ideas.map(idea => {
+    let adjustedScore = idea.score
+    
+    // Difficulty bonus
+    if (parameters.difficulty === 'advanced') adjustedScore += 5
+    if (parameters.difficulty === 'beginner') adjustedScore += 3
+    
+    // Structure bonus
+    if (parameters.structure === 'project') adjustedScore += 4
+    if (parameters.structure === 'case-study') adjustedScore += 3
+    
+    // Objectives bonus
+    if (parameters.objectives === 'transformation') adjustedScore += 6
+    if (parameters.objectives === 'practical') adjustedScore += 4
+    
+    // Audience-specific scoring
+    if (parameters.audience === 'educators' && ['course', 'workshop'].includes(idea.type)) adjustedScore += 5
+    if (parameters.audience === 'coaches' && ['coaching', 'webinar'].includes(idea.type)) adjustedScore += 5
+    
+    return {
+      ...idea,
+      score: Math.min(100, adjustedScore)
+    }
+  })
   
   // Sort by score
   ideas.sort((a, b) => b.score - a.score)
   
-  // Return top 6 ideas
-  return JSON.parse(JSON.stringify(ideas.slice(0, 6)))
+// Return top 8 educational ideas
+  return JSON.parse(JSON.stringify(ideas.slice(0, 8)))
 }
 
 export const getIdeaById = async (id) => {

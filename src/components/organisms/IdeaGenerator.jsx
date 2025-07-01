@@ -15,16 +15,23 @@ const IdeaGenerator = () => {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [topic, setTopic] = useState('')
-  const [parameters, setParameters] = useState({
+const [parameters, setParameters] = useState({
     type: 'all',
     difficulty: 'medium',
-    audience: 'general'
+    audience: 'general',
+    structure: 'mixed',
+    objectives: 'engagement'
   })
 
   const contentTypes = [
     { id: 'all', label: 'All Types' },
-    { id: 'video', label: 'Video' },
+    { id: 'course', label: 'Course Module' },
+    { id: 'book', label: 'Book Chapter' },
+    { id: 'workshop', label: 'Workshop' },
+    { id: 'video', label: 'Video Lesson' },
     { id: 'blog', label: 'Blog Post' },
+    { id: 'coaching', label: 'Coaching Session' },
+    { id: 'webinar', label: 'Webinar' },
     { id: 'social', label: 'Social Media' },
     { id: 'infographic', label: 'Infographic' }
   ]
@@ -35,11 +42,30 @@ const IdeaGenerator = () => {
     { id: 'advanced', label: 'Advanced' }
   ]
 
-  const audiences = [
+const audiences = [
     { id: 'general', label: 'General Audience' },
+    { id: 'students', label: 'Students & Learners' },
     { id: 'business', label: 'Business Professionals' },
-    { id: 'students', label: 'Students' },
+    { id: 'educators', label: 'Fellow Educators' },
+    { id: 'coaches', label: 'Coaches & Consultants' },
+    { id: 'entrepreneurs', label: 'Entrepreneurs' },
     { id: 'creators', label: 'Content Creators' }
+  ]
+
+  const structures = [
+    { id: 'mixed', label: 'Mixed Format' },
+    { id: 'sequential', label: 'Sequential Learning' },
+    { id: 'modular', label: 'Modular Approach' },
+    { id: 'project', label: 'Project-Based' },
+    { id: 'case-study', label: 'Case Studies' }
+  ]
+
+  const objectives = [
+    { id: 'engagement', label: 'Maximize Engagement' },
+    { id: 'retention', label: 'Knowledge Retention' },
+    { id: 'practical', label: 'Practical Application' },
+    { id: 'transformation', label: 'Behavioral Change' },
+    { id: 'certification', label: 'Skill Certification' }
   ]
 
   const handleGenerate = async () => {
@@ -89,52 +115,82 @@ const IdeaGenerator = () => {
             />
           </div>
 
-          {/* Parameters */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Content Type</label>
-              <select
-                value={parameters.type}
-                onChange={(e) => setParameters({ ...parameters, type: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                {contentTypes.map((type) => (
-                  <option key={type.id} value={type.id}>{type.label}</option>
-                ))}
-              </select>
+{/* Parameters */}
+          <div className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Content Type</label>
+                <select
+                  value={parameters.type}
+                  onChange={(e) => setParameters({ ...parameters, type: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  {contentTypes.map((type) => (
+                    <option key={type.id} value={type.id}>{type.label}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Difficulty Level</label>
+                <select
+                  value={parameters.difficulty}
+                  onChange={(e) => setParameters({ ...parameters, difficulty: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  {difficulties.map((diff) => (
+                    <option key={diff.id} value={diff.id}>{diff.label}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Target Audience</label>
+                <select
+                  value={parameters.audience}
+                  onChange={(e) => setParameters({ ...parameters, audience: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  {audiences.map((aud) => (
+                    <option key={aud.id} value={aud.id}>{aud.label}</option>
+                  ))}
+                </select>
+              </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Difficulty Level</label>
-              <select
-                value={parameters.difficulty}
-                onChange={(e) => setParameters({ ...parameters, difficulty: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                {difficulties.map((diff) => (
-                  <option key={diff.id} value={diff.id}>{diff.label}</option>
-                ))}
-              </select>
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Content Structure</label>
+                <select
+                  value={parameters.structure}
+                  onChange={(e) => setParameters({ ...parameters, structure: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  {structures.map((struct) => (
+                    <option key={struct.id} value={struct.id}>{struct.label}</option>
+                  ))}
+                </select>
+              </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Target Audience</label>
-              <select
-                value={parameters.audience}
-                onChange={(e) => setParameters({ ...parameters, audience: e.target.value })}
-                className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                {audiences.map((aud) => (
-                  <option key={aud.id} value={aud.id}>{aud.label}</option>
-                ))}
-              </select>
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Learning Objective</label>
+                <select
+                  value={parameters.objectives}
+                  onChange={(e) => setParameters({ ...parameters, objectives: e.target.value })}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  {objectives.map((obj) => (
+                    <option key={obj.id} value={obj.id}>{obj.label}</option>
+                  ))}
+                </select>
+              </div>
             </div>
           </div>
 
-          {/* Generate Button */}
+{/* Generate Button */}
           <div className="flex items-center justify-between">
             <div className="text-sm text-gray-500">
-              AI will generate 5-10 unique ideas based on your parameters
+              AI will generate 5-8 educational content ideas optimized for your audience and learning objectives
             </div>
             <Button
               onClick={handleGenerate}
