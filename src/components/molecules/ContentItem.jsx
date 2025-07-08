@@ -44,8 +44,12 @@ const ContentItem = ({ content, index, onBookmark }) => {
     toast.success(isBookmarked ? 'Removed from bookmarks' : 'Added to bookmarks')
   }
 
-  const handleOpenContent = () => {
+const handleOpenContent = () => {
     window.open(content.url, '_blank')
+  }
+
+  const handleDraft = () => {
+    toast.info('Content drafting feature coming soon!')
   }
 
   return (
@@ -113,7 +117,16 @@ const ContentItem = ({ content, index, onBookmark }) => {
             <Badge variant="primary" size="sm">
               {content.platform}
             </Badge>
-            <div className="flex items-center space-x-2">
+<div className="flex items-center space-x-2">
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleDraft}
+                className="p-1"
+                title="Draft content based on this"
+              >
+                <ApperIcon name="PenTool" className="w-4 h-4 text-gray-400" />
+              </Button>
               <Button
                 variant="ghost"
                 size="sm"

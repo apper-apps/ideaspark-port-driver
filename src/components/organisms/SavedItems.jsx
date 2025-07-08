@@ -16,10 +16,11 @@ const SavedItems = () => {
   const [activeTab, setActiveTab] = useState('all')
   const [searchQuery, setSearchQuery] = useState('')
 
-  const tabs = [
+const tabs = [
     { id: 'all', label: 'All Items', icon: 'Grid3X3' },
     { id: 'content', label: 'Content', icon: 'FileText' },
     { id: 'ideas', label: 'Ideas', icon: 'Lightbulb' },
+    { id: 'drafts', label: 'Drafts', icon: 'PenTool' },
     { id: 'searches', label: 'Searches', icon: 'Search' }
   ]
 

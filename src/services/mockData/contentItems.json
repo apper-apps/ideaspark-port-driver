@@ -98,7 +98,7 @@
     "publishedDate": "2024-01-07T12:00:00Z",
     "author": "PlantPowered"
   },
-  {
+{
     "Id": 10,
     "title": "My $5000 Gaming Setup Tour (2024 Edition)",
     "platform": "YouTube",
@@ -108,5 +108,38 @@
     "engagement": 34500,
     "publishedDate": "2024-01-05T18:30:00Z",
     "author": "GamingSetupGuru"
+  },
+  {
+    "Id": 11,
+    "title": "Complete Course Creation Blueprint: From Idea to Launch",
+    "platform": "Blog",
+    "url": "https://example.com/course-creation-blueprint",
+    "thumbnail": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=200&fit=crop",
+    "views": 89000,
+    "engagement": 5600,
+    "publishedDate": "2024-01-16T09:30:00Z",
+    "author": "EduPreneur"
+  },
+  {
+    "Id": 12,
+    "title": "Book Writing Masterclass: Structure That Sells",
+    "platform": "YouTube",
+    "url": "https://youtube.com/watch?v=book-writing",
+    "thumbnail": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=200&fit=crop",
+    "views": 234000,
+    "engagement": 18500,
+    "publishedDate": "2024-01-14T15:45:00Z",
+    "author": "AuthorSuccess"
+  },
+  {
+    "Id": 13,
+    "title": "How I Turned My Knowledge Into a $100K Online Course",
+    "platform": "Blog",
+    "url": "https://example.com/knowledge-to-course",
+    "thumbnail": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=200&fit=crop",
+    "views": 156000,
+    "engagement": 12300,
+    "publishedDate": "2024-01-12T11:20:00Z",
+    "author": "CourseCreatorPro"
   }
 ]

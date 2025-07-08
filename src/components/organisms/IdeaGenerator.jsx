@@ -10,18 +10,24 @@ import Input from '@/components/atoms/Input'
 import ApperIcon from '@/components/ApperIcon'
 import { generateIdeas } from '@/services/api/ideaService'
 
-const IdeaGenerator = () => {
+const IdeaGenerator = ({ onDraftContent }) => {
   const [ideas, setIdeas] = useState([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [topic, setTopic] = useState('')
-const [parameters, setParameters] = useState({
+  const [parameters, setParameters] = useState({
     type: 'all',
     difficulty: 'medium',
     audience: 'general',
     structure: 'mixed',
     objectives: 'engagement'
   })
+
+  const handleDraftContent = (idea) => {
+    if (onDraftContent) {
+      onDraftContent(idea)
+    }
+  }
 
   const contentTypes = [
     { id: 'all', label: 'All Types' },
@@ -257,11 +263,12 @@ const audiences = [
 
             {/* Ideas Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {ideas.map((idea, index) => (
+{ideas.map((idea, index) => (
                 <IdeaCard
                   key={idea.Id}
                   idea={idea}
                   index={index}
+                  onDraftContent={handleDraftContent}
                 />
               ))}
             </div>
